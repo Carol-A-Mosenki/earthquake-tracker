@@ -1,7 +1,7 @@
 Earthquake Tracker 🌍💥
 
 A live web app that visualizes recent earthquakes around the world, built with HTML, CSS, and JavaScript.
-
+https://carol-a-mosenki.github.io/earthquake-tracker/
 
 
 Features
