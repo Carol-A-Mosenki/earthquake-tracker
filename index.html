@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earthquake Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="topbar">
+    <h1>Earthquake Tracker</h1>
+    <nav>
+      <a href="https://github.com/Carol-A-Mosenki" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/abang-carol-mosenki-a8227a393/" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <!-- Filter Panel -->
+  <section class="filter-panel">
+    <label for="magnitude">Minimum Magnitude:</label>
+    <select id="magnitude">
+      <option value="0">0+</option>
+      <option value="2">2+</option>
+      <option value="4">4+</option>
+      <option value="6">6+</option>
+    </select>
+    <button id="refresh">Refresh Data</button>
+    <span id="last-updated"></span>
+  </section>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Cards / Latest Earthquakes -->
+  <section id="results" class="results"></section>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

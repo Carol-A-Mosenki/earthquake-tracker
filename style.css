@@ -1,0 +1,38 @@
+/* Reset & Body */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Poppins', sans-serif; background:#111; color:#fff; }
+
+/* Topbar */
+.topbar {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1rem 2rem; background:#1a1a1a;
+}
+.topbar a { color:#A8DADC; margin-left:1rem; text-decoration:none; transition:0.3s; }
+.topbar a:hover { color:#F1A6C7; }
+
+/* Filter Panel */
+.filter-panel {
+  display:flex; align-items:center; gap:1rem;
+  padding:1rem 2rem; background:#222; flex-wrap:wrap;
+}
+.filter-panel select, .filter-panel button {
+  padding:0.5rem 1rem; border-radius:0.5rem; border:none;
+  cursor:pointer; background:#A8DADC; color:#111; transition:0.3s;
+}
+.filter-panel select:hover, .filter-panel button:hover { background:#F1A6C7; }
+#last-updated { margin-left:auto; font-size:0.9rem; color:#ccc; }
+
+/* Map */
+#map { height:60vh; width:100%; margin-bottom:1rem; }
+
+/* Result Cards */
+.results {
+  display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; padding:1rem;
+}
+.result-card {
+  background:#222; border-radius:1rem; padding:1rem; width:250px;
+  color:#fff; transition:transform 0.3s, box-shadow 0.3s;
+}
+.result-card:hover {
+  transform:translateY(-5px); box-shadow:0 0 20px rgba(255,255,255,0.2);
+}
